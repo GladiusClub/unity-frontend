@@ -24,10 +24,12 @@ const StyledUnityCanvas = styled.div`
 
 function App() {
   const { unityProvider } = useUnityContext({
-    loaderUrl: process.env.PUBLIC_URL + "/build/GladiusBuild.loader.js",
-    dataUrl: process.env.PUBLIC_URL + "/build/GladiusBuild.data",
-    frameworkUrl: process.env.PUBLIC_URL + "/build/GladiusBuild.framework.js",
-    codeUrl: process.env.PUBLIC_URL + "/build/GladiusBuild.wasm",
+    loaderUrl:
+      "https://storage.googleapis.com/unity-files/GladiusBuild.loader.js",
+    dataUrl: "https://storage.googleapis.com/unity-files/GladiusBuild.data",
+    frameworkUrl:
+      "https://storage.googleapis.com/unity-files/GladiusBuild.framework.js",
+    codeUrl: "https://storage.googleapis.com/unity-files/GladiusBuild.wasm",
   });
 
   return (
